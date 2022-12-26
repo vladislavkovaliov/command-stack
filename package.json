@@ -1,7 +1,7 @@
 {
-  "name": "semantic-release-template",
+  "name": "commands-stack",
   "version": "0.0.0-development",
-  "description": "Based configured template with Semantic Relase",
+  "description": "Based configured template with Semantic Release",
   "private": false,
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
-  "keywords": ["semantic"],
+  "keywords": [
+    "semantic"
+  ],
   "author": "",
   "license": "ISC",
   "lint-staged": {
@@ -22,7 +24,8 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
-    "semantic-release": "^19.0.5"
+    "semantic-release": "^19.0.5",
+    "typescript": "^4.9.4"
   },
   "release": {
     "branches": [
@@ -34,7 +37,7 @@
         {
           "npmPublish": false
         }
-      ],       
+      ],
       "@semantic-release/github"
     ]
   },
@@ -45,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vladislavkovaliov/semantic-release-template.git"
+    "url": "https://github.com/vladislavkovaliov/commands-stack.git"
   }
 }
