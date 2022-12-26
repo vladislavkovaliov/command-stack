@@ -3,16 +3,18 @@
   "version": "0.0.0-development",
   "description": "Based configured template with Semantic Release",
   "private": false,
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "commit": "cz",
     "test": "jest --detectOpenHandles",
     "semantic-release": "semantic-release"
   },
   "keywords": [
-    "semantic"
+    "commands",
+    "stack",
+    "pattern"
   ],
-  "author": "",
+  "author": "Vlad",
   "license": "ISC",
   "lint-staged": {
     "*.{ts,tsx}": [
