@@ -54,7 +54,7 @@ export class AsyncIncrement extends Command<Promise<number>> {
 
 ```typescript jsx
 
-import { CommandStack, Command } from "commands-stack";
+import { CommandStack, Command } from "command-stack-pattern";
 
 const cs = new CommandStack<number>(0); // simple
 await cs.execute(new Increment(1)); // state = 1
