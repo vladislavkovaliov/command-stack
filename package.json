@@ -3,18 +3,16 @@
   "version": "0.0.0-development",
   "description": "Implementation of Command Pattern",
   "private": false,
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
   "files": [
     "dist",
+    "types",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
     "build": "rm -rf dist && rm -rf types && tsc",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "commit": "cz",
     "test": "jest --detectOpenHandles",
     "semantic-release": "semantic-release",
