@@ -1,21 +1,34 @@
 {
   "name": "commands-stack",
   "version": "0.0.0-development",
-  "description": "Based configured template with Semantic Release",
+  "description": "Implementation of Command Pattern",
   "private": false,
-  "main": "src/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
+    "build": "rm -rf dist && rm -rf types && tsc",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "commit": "cz",
     "test": "jest --detectOpenHandles",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "commands",
     "stack",
-    "pattern"
+    "pattern",
+    "typescript"
   ],
-  "author": "Vlad",
-  "license": "ISC",
+  "author": "Vlad (v.v.kovaliov@gmail.com)",
+  "license": "MIT",
   "lint-staged": {
     "*.{ts,tsx}": [
       "git add"
@@ -45,7 +58,7 @@
       [
         "@semantic-release/npm",
         {
-          "npmPublish": false
+          "npmPublish": true
         }
       ],
       "@semantic-release/github"
