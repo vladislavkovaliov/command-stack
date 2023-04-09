@@ -44,7 +44,7 @@ export class AsyncIncrement extends Command<Promise<number>> {
     }
 }
 
-describe('[CommandStack.ts]', () => {
+describe('[CommandStack.ts] ', () => {
     describe('sync calling execute()', () => {
         test('should increment state', async () => {
             const cs = new CommandStack<number>(0);
