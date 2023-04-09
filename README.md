@@ -59,7 +59,7 @@ import { CommandStack, Command } from "command-stack-pattern";
 const cs = new CommandStack<number>(0); // simple
 await cs.execute(new Increment(1)); // state = 1
 
-const csAsync = new CommandStack<number>(0); // async
+const csAsync = new CommandStack<Promise<number>>(Promise.resolve(0)); // async
 await csAsync.execute(new AsyncIncrement(1)); // state = 1 after 2000ms
 
 
