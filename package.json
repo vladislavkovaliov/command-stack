@@ -1,5 +1,5 @@
 {
-  "name": "@vladislavkovaliov/command-stack",
+  "name": "command-stack-pattern",
   "version": "0.0.0-development",
   "description": "Implementation of Command Pattern",
   "private": false,
