@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "esnext",
     "declaration": true,
-    "declarationDir": "./types",
     "module": "commonjs",                                /* Specify what module code is generated. */
     "rootDir": "./src",
     "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
